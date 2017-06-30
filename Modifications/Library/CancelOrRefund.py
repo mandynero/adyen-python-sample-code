@@ -3,12 +3,12 @@ import Adyen
 ady = Adyen.Adyen()
 
 
-"""Cancel or Refund a Payment using PHP Library
+"""Cancel or Refund a Payment using Python Library
 
 If you do not know if the payment is captured but you want to reverse
 the authorisation you can send a modification request to the cancelOrRefund action
 This file shows how a payment can be cancelled or refunded by a
-modification request using PHP Library.
+modification request using Python Library.
 
 Please note: using our API requires a web service user. Set up your Webservice
 user: Adyen Test CA >> Settings >> Users >> ws@Company. >> Generate Password >> Submit

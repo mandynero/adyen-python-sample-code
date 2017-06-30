@@ -2,7 +2,7 @@ import Adyen
 
 ady = Adyen.Adyen()
 
-"""Create 3D Secure payment (PHP Library)
+"""Create 3D Secure payment (Python Library)
 
 3D Secure (Verifed by VISA / MasterCard SecureCode™) is an additional authentication
 protocol that involves the shopper being redirected to their card issuer where their

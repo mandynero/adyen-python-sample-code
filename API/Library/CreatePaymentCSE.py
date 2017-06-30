@@ -19,7 +19,7 @@ https://www.pcisecuritystandards.org/security_standards/documents.php?category=s
 Please note: using our API requires a web service user. Set up your Webservice
 user: Adyen Test CA >> Settings >> Users >> ws@Company. >> Generate Password >> Submit
 
-@link	2.API/Library/CreatePaymentCSE.py
+@link	API/Library/CreatePaymentCSE.py
 @author	Created by Adyen
 
 """
