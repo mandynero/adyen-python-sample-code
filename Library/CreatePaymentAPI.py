@@ -4,25 +4,25 @@ ady = Adyen.Adyen()
 
 """ Create Payment through the API (Python Library)
  
-	Payments can be created through our API, however this is only possible if you are PCI Compliant. Java Library payments
-	are submitted using the authorise method. We will explain a simple credit card submission.
+  Payments can be created through our API, however this is only possible if you are PCI Compliant. Java Library payments
+  are submitted using the authorise method. We will explain a simple credit card submission.
  
-	Please note: using our API requires a web service user. Set up your Webservice user:
-	Adyen CA >> Settings >> Users >> ws@Company. >> Generate Password >> Submit
+  Please note: using our API requires a web service user. Set up your Webservice user:
+  Adyen CA >> Settings >> Users >> ws@Company. >> Generate Password >> Submit
  
-	@link /2.API/Library/CreatePaymentAPI
-	@author Created by Adyen - Payments Made Easy
+  @link /2.API/Library/CreatePaymentAPI
+  @author Created by Adyen - Payments Made Easy
  
 """
 
 
 """
-	Client settings
-         - Adyen.client
-         				-username		: your web service user
-                		-password		: your web service user's password
-                		-platform		: the environment you are using (test/live)
-                		-app_name		: your application name
+Client settings
+ - Adyen.client
+  -username : your web service user
+  -password	: your web service user's password
+  -platform	: the environment you are using (test/live)
+  -app_name	: your application name
 """
 client = ady.client
 client.username = "YourWSUser"
