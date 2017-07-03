@@ -15,7 +15,7 @@ API
     - Authorise3dSecurePayment.py    : Authorise a 3D Secure payment using Python Library
     - Create3dSecurePayment.py       : Create a 3D Secure payment using Python Library
     - CreatePaymentAPI.py            : Create a payment via our API using Python Library
-   	- CreatePaymentCSE.py            : Create a Client-Side Encrypted payment using Python Library
+    - CreatePaymentCSE.py            : Create a Client-Side Encrypted payment using Python Library
 Modifications
   - Library
     - CancelOrRefund.py              : Cancel or refund a payment using Python Library
