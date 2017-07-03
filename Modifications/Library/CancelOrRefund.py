@@ -13,7 +13,7 @@ modification request using Python Library.
 Please note: using our API requires a web service user. Set up your Webservice
 user: Adyen Test CA >> Settings >> Users >> ws@Company. >> Generate Password >> Submit
 
-@link	4.Modifications/Library/cancel-or-refund.php
+@link	Modifications/Library/CancelOrRefund.py
 @author	Created by Adyen - Payments Made Easy
 """
 

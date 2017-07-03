@@ -53,7 +53,7 @@ request['countryCode'] = "NL"
 request['shopperLocale'] = "nl_NL"
 request['sessionValidity'] = time.strftime('%Y-%m-%dT%H:%M:%SZ')
 
-result = self.ady.hpp.directory_lookup(self.request)
+result = ady.hpp.directory_lookup(request)
 
 """
 The $result contains a JSON array containing

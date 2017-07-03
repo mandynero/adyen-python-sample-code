@@ -69,9 +69,9 @@ result = ady.payment.authorise(request)
 If the payment passes validation a risk analysis will be done and, depending on the outcome, an authorisation
 will be attempted. You receive a payment response with the following fields:
   - pspReference 	: Adyen's unique reference that is associated with the payment.
-  - resultCode 	: The result of the payment. Possible values: Authorised, Refused, Error or Received.
-  - authCode      : The authorisation code if the payment was successful. Blank otherwise.
-  - refusalReason: Adyen's mapped refusal reason, populated if the payment was refused.
+  - resultCode 	    : The result of the payment. Possible values: Authorised, Refused, Error or Received.
+  - authCode        : The authorisation code if the payment was successful. Blank otherwise.
+  - refusalReason   : Adyen's mapped refusal reason, populated if the payment was refused.
 """
 print("Payment Result:")
 print("- pspReference: " + result.message['pspReference'])

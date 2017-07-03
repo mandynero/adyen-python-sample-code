@@ -60,7 +60,10 @@ of the web service. The request should contain the following variables:
 request = {}
 request['merchantAccount'] = "YourMerchantAccount"
 request['reference'] = "YourReference"
-request['browserInfo'] = self.browserInfo
+request['browserInfo'] = {
+    "userAgent" : "YourUserAgent",
+    "acceptHeader" : "YourAcceptHeader"
+  }
 request['md'] = "YourMd"
 request['paResponse'] = "YourPaResponse"
 

@@ -36,28 +36,28 @@ containing the following variables:
 
 - merchantAccount			: The merchant account for which you want to process the payment
 - amount
-  - value				: The transaction amount.
-  - currency			: The three character ISO currency code.
+  - value				    : The transaction amount.
+  - currency			    : The three character ISO currency code.
 - reference 				: Your reference for this payment.
 - ipAddress					: The shopper's IP address. (recommended)
 - shopperEmail				: The shopper's email address. (recommended)
 - shopperReference			: An ID that uniquely identifes the shopper, such as a customer id. (recommended)
 - fraudOffset				: An integer that is added to the normal fraud score. (optional)
 - card
-  - number			: The card number.
-  - holderName		: The card holder's name, as embossed on the card.
-  - expiryMonth		: The expiration date's month written as a 2-digit string,
-                      padded with 0 if required (e.g. 03 or 12).
-  - expiryYear		: The expiration date's year written as in full (e.g. 2016).
-  - cvc 				: The card validation code, which is the CVC2 (MasterCard),
-                      CVV2 (Visa) or CID (American Express).
+  - number			        : The card number.
+  - holderName		        : The card holder's name, as embossed on the card.
+  - expiryMonth		        : The expiration date's month written as a 2-digit string,
+                            padded with 0 if required (e.g. 03 or 12).
+  - expiryYear		        : The expiration date's year written as in full (e.g. 2016).
+  - cvc 				    : The card validation code, which is the CVC2 (MasterCard),
+                            CVV2 (Visa) or CID (American Express).
 - billingAddress (recommended)
-  - street 			: The street name.
-  - houseNumberOrName	: The house number (or name).
-  - city				: The city.
-  - postalCode		: The postal/zip code.
-  - stateOrProvince 	: The state or province.
-  - country 			: The country in ISO 3166-1 alpha-2 format (e.g. NL).
+  - street 			        : The street name.
+  - houseNumberOrName	    : The house number (or name).
+  - city				    : The city.
+  - postalCode		        : The postal/zip code.
+  - stateOrProvince 	    : The state or province.
+  - country 			    : The country in ISO 3166-1 alpha-2 format (e.g. NL).
 """
 request = {}
 request['merchantAccount'] = "YourMerchantAccount"
@@ -76,10 +76,10 @@ result = ady.payment.authorise(request)
 """        
 If the payment passes validation a risk analysis will be done and, depending on the outcome, an authorisation
 will be attempted. You receive a payment response with the following fields:
-  - pspReference 	: Adyen's unique reference that is associated with the payment.
-  - resultCode 	: The result of the payment. Possible values: Authorised, Refused, Error or Received.
-  - authCode      : The authorisation code if the payment was successful. Blank otherwise.
-  - refusalReason: Adyen's mapped refusal reason, populated if the payment was refused.
+  - pspReference 	        : Adyen's unique reference that is associated with the payment.
+  - resultCode 	            : The result of the payment. Possible values: Authorised, Refused, Error or Received.
+  - authCode                : The authorisation code if the payment was successful. Blank otherwise.
+  - refusalReason           : Adyen's mapped refusal reason, populated if the payment was refused.
 """
 print("Payment Result:")
 print("- pspReference: " + result.message['pspReference'])
